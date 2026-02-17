@@ -1,0 +1,32 @@
+.assign-1-shape-1,
+.assign-1-shape-2,
+.assign-1-shape-3 {
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+}
+
+.assign-1-shape-1 {
+    border: 5px solid red;
+    outline: 5px solid black;
+
+
+}
+
+.assign-1-shape-2 {
+    border-top: 5px solid blue;
+    border-right: 5px solid green;
+    border-bottom: 5px solid blue;
+    border-left: 5px solid green;
+    outline: 5px solid black;
+
+}
+
+.assign-1-shape-3 {
+    border-top: 5px dashed red;
+    border-right: 5px dashed green;
+    border-bottom: 5px dashed blue;
+    border-left: 5px dashed yellow;
+    outline: 5px solid black;
+
+}

@@ -1,0 +1,28 @@
+.assign-1-shape-1,
+.assign-1-shape-2,
+.assign-1-shape-3 {
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+}
+
+.assign-1-shape-1 {
+    border-left: 5px solid red;
+
+    background-color: rgba(128, 128, 128, 0.5);
+
+
+
+}
+
+.assign-1-shape-2 {
+    visibility: hidden;
+
+}
+
+.assign-1-shape-3 {
+    border-left: 5px solid green;
+    background-color: rgba(128, 128, 128, 0.5);
+
+
+}
