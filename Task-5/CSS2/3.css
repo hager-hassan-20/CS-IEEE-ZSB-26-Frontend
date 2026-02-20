@@ -1,0 +1,23 @@
+.one {
+    background-color: #eee;
+    padding: 10px;
+    width: 400px;
+    word-break: break-word;
+}
+
+.two {
+    background-color: #eee;
+    padding: 10px;
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.three {
+    background-color: #eee;
+    padding: 10px;
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

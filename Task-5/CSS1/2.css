@@ -1,0 +1,10 @@
+div {
+    background-color: rgb(173, 93, 93);
+    padding: 10px;
+    display: inline-block;
+    min-width: auto;
+    max-width: 400px;
+    height: 40px;
+    overflow: hidden;
+
+}

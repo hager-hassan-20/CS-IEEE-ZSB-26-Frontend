@@ -1,0 +1,7 @@
+div {
+    background-color: rgb(232, 232, 232);
+    text-shadow:
+        1px 1px 0 red,
+        2px 2px 0 blue,
+        3px 3px 0 blueviolet;
+}
