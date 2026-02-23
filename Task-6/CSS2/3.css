@@ -1,0 +1,51 @@
+.main {
+    width: 400px;
+    margin: 40px;
+    padding: 20px;
+    background-color: white;
+}
+
+li {
+    background-color: #eee;
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+
+}
+
+ol {
+    background-color: #eee;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.one li {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    list-style-position: outside;
+    list-style-type: decimal;
+}
+
+.two li {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    list-style-position: outside;
+    list-style-type: upper-roman;
+}
+
+.main ul {
+    background-color: #eee;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.main ul li {
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px;
+    list-style-position: inside;
+    list-style-type: circle;
+
+}

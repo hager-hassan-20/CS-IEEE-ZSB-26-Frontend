@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    background-color: #eee;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid red;
+    border-bottom: 5px solid red;
+    border-left: 5px solid blue;
+    border-right: 5px solid blue;
+    position: relative;
+    line-height: 1.6;
+}
+
+span {
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+
+}
+
+.top-left {
+    top: -15px;
+    left: -15px;
+    border-right: 5px solid red;
+
+}
+
+.bottom-left {
+    bottom: -15px;
+    left: -15px;
+    border-right: 5px solid red;
+}
+
+.top-right {
+    top: -15px;
+    right: -15px;
+    border-left: 5px solid red;
+}
+
+.bottom-right {
+    bottom: -15px;
+    right: -15px;
+    border-left: 5px solid red;
+}

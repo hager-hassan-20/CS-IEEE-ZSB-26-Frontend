@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+.parent {
+    background-color: #eee;
+    width: 800px;
+    overflow: hidden;
+
+}
+
+div {
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #acabab;
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.one {
+
+    width: calc(100% - 30px);
+
+}
+
+.two {
+
+    width: calc((100% - 60px)/3);
+
+}
+
+.three {
+
+    width: calc((100% - 45px)/2);
+}
+
+.four {
+
+    width: calc((100% - 75px)/4);
+
+}
