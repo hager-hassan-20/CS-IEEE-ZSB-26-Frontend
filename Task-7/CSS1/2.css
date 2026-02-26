@@ -1,0 +1,17 @@
+div {
+    width: 400px;
+    font-size: 20px !important;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee !important;
+    border: 1px solid #eee !important;
+    color: transparent !important;
+    position: relative;
+
+}
+
+div::before {
+    content: "Elzero" !important;
+    color: #000 !important;
+    position: absolute;
+}
