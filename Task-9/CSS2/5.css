@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    margin: 40px auto;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    perspective: 300px;
+    transform-style: preserve-3d;
+    transition: transform 1s
+}
+
+div:hover {
+    transform: rotateY(-180deg);
+}
+
+
+div::before {
+    content: "Front";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(234, 82, 176);
+    backface-visibility: hidden;
+    transform: rotateY(360deg);
+
+}
+
+div::after {
+    content: "Back";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(49, 164, 246);
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+
+}
