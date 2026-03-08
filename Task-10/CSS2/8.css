@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+div :not(:first-child, :last-child, h3) {
+    color: red;
+}

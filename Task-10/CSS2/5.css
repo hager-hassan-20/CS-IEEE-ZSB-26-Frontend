@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+div:nth-of-type(2) div[title]:nth-child(2) {
+    color: red;
+}

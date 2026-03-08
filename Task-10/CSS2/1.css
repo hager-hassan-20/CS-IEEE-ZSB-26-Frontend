@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+div[class="main red"] {
+    color: red;
+}
