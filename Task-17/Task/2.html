@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+  </head>
+  <body>
+    <script>
+        // Method One
+        let objMethodOne ={
+            property : "Method One"
+        }
+       console.log(objMethodOne.property);
+
+       // Method Two
+       let objMethodTwo = new Object({property : "Method Two"})
+       console.log(objMethodTwo.property);
+
+       // Method Three
+       let objMethodThree = Object.create(objMethodTwo)
+       objMethodThree.property = "Method Three"
+       console.log(objMethodThree.property);
+
+       // Method Four
+       let objMethodFour = Object.assign({},{property : "Method Four"})
+       console.log(objMethodFour.property);
+
+    </script>
+  </body>
+
+</html>
