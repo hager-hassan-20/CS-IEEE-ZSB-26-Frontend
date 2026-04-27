@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+</head>
+<body>
+    <form action="">
+  <input type="number" name="dollar" placeholder="USD Dollar" />
+  <div class="result">{0} USD Dollar = {0} Egyptian Pound</div>
+</form>
+    <script>
+        let input = document.querySelector("[name='dollar']")
+        let result = document.querySelector(".result")
+
+        document.forms[0].oninput = function(e) {
+            let dollar = input.value
+            let egyptianPound = (dollar * 15.6).toFixed(2)
+
+            result.textContent = `${dollar} USD Dollar = ${egyptianPound} Egyptian Pound`
+        }
+    </script>
+</body>
+</html>

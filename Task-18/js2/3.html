@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JavaScript</title>
+</head>
+<body>
+    <div class="our-element">Our Element</div> 
+    <p>Paragraph</p>
+    <script>
+        let element = document.querySelector(".our-element")
+        let Paragraph = document.querySelector("p")
+        Paragraph.remove()
+        let div1 = document.createElement("div")
+        let div2 = document.createElement("div")
+
+        div1.className = "start"
+        div1.title = "Start Element"
+        div1.setAttribute("data-value", "Start")
+        div1.textContent = "Start"
+
+        div2.className = "end"
+        div2.title = "End Element"
+        div2.setAttribute("data-value", "End")
+        div2.textContent = "End"
+
+
+        element.before(div1)
+        element.after(div2)
+
+
+    </script>
+</body>
+</html>

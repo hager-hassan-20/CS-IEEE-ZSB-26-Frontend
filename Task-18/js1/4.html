@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+</head>
+<body>
+    <div class="one" title="two">Two</div>
+    <div class="two" title="one">One</div>
+    <script>
+        let one = document.querySelector(".one")
+        let two = document.querySelector(".two")
+
+        let oneText = one.innerHTML
+        let oneTitle = one.title
+
+        one.innerHTML = two.innerHTML
+        two.innerHTML = oneText +' '+ two.attributes.length
+
+        one.title = two.title
+        two.title = oneTitle
+       
+        
+
+    </script>
+</body>
+</html>

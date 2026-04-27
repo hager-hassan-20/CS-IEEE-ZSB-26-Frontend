@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+</head>
+<body>
+    <form action="">
+  <input type="number" name="elements" class="input" placeholder="Number Of Elements" />
+  <input type="text" name="texts" class="input" placeholder="Elements Text" />
+  <select name="type" class="input">
+    <option value="Div">Div</option>
+    <option value="Section">Section</option>
+  </select>
+  <input type="submit" name="create" value="Create" />
+  <div class="results"></div>
+</form>
+    <script>
+        let form = document.querySelector("form")
+        let num = document.querySelector("[name='elements']")
+        let texts = document.querySelector("[name='texts']")
+        let types = document.querySelector("[name='type']")
+        let results = document.querySelector(".results")
+
+        form.onsubmit = function (e) {
+            e.preventDefault()
+            
+            results.innerHTML = ""
+
+            let number = num.value
+            let text = texts.value
+            let type = types.value
+
+            for(let i = 1; i<= number; i++){
+                let element = document.createElement(type)
+
+                element.className = "box";
+                element.title = "Element";
+                element.id = `id-${i}`;
+                element.textContant = text;
+
+                element.style.background = "red";
+                element.style.color = "white";
+                element.style.padding = "15px";
+                element.style.margin = "10px";
+                element.style.textAlign = "center"; 
+
+                results.appendChild(element)
+            }
+
+        }
+
+    </script>
+</body>
+</html>

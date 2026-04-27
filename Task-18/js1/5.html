@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+</head>
+<body>
+    <img decoding="async" src="#" alt="One" />
+    <img decoding="async" src="#" />
+    <img decoding="async" src="#" alt="Three" />
+    <img decoding="async" src="#" />
+    <img decoding="async" src="#" />
+    <script>
+        let images = document.querySelectorAll("img")
+        for(let i=0; i<images.length; i++){
+            if(images[i].hasAttribute("alt")){
+                images[i].setAttribute("alt", "Old")
+            }else{
+                images[i].setAttribute("alt", "Elzero New")
+            }
+        }
+    </script>
+</body>
+</html>
