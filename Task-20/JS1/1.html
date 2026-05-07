@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JS</title>
+</head>
+<body>
+    <script>
+        let promptMsg = prompt("Print Number From – To","Example: 5-20")
+        let numbers = promptMsg.split("-");
+        let fNum = Number(numbers[0])
+        let sNum = Number(numbers[1])
+        if (fNum>sNum){
+            for(let i =sNum; i<=fNum; i++){
+                console.log(i)
+            }
+        } else{
+            for(let i =fNum; i<=sNum; i++){
+                console.log(i)
+            }
+        }
+       
+    </script>
+</body>
+</html>

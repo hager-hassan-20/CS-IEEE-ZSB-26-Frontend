@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JS</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" class="name">
+        <input type="number" class="age">
+        <input type="email" class="email">
+        <select class="country">
+            <option value="Egypt">Egypt</option>
+            <option value="Saudi Arabia">Saudi Arabia</option>
+            <option value="UAE">UAE</option>
+            <option value="Qatar">Qatar</option>
+            <option value="Kuwait">Kuwait</option>
+        </select>
+    </form>
+
+    <script>
+        let nameText = document.querySelector(".name")
+        let ageNum = document.querySelector(".age")
+        let emaiAdd = document.querySelector(".email")
+        let countryLoc = document.querySelector(".country")
+
+        if(sessionStorage.getItem("name")){
+            sessionStorage.getItem("name") = nameText.value
+        }
+
+        if(sessionStorage.getItem("age")){
+            sessionStorage.getItem("age") = ageNum.value
+        }
+
+        if(sessionStorage.getItem("email")){
+            sessionStorage.getItem("email") = emaiAdd.value
+        }
+
+        if(sessionStorage.getItem("country")){
+            sessionStorage.getItem("country") = countryLoc.value
+        }
+
+        nameText.onblur = function(){
+            sessionStorage.setItem("name",this.value)
+        }
+
+        ageNum.onblur = function(){
+            sessionStorage.setItem("age",this.value)
+        }
+
+        emaiAdd.onblur = function(){
+            sessionStorage.setItem("email",this.value)
+        }
+
+        countryLoc.onblur = function(){
+            sessionStorage.setItem("country",this.value)
+        }
+
+    </script>
+</body>
+</html>

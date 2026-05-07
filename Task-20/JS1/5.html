@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JS</title>
+</head>
+<body>
+    <div>10</div>
+    <script>
+        let div = document.querySelector("div")
+        function count(){
+            div.innerHTML -=1
+            if(div.innerHTML === "5"){
+                window.open("https://elzero.org", "", "width=600,height=600")
+            }
+            if(div.innerHTML === "0"){
+                clearInterval(counter)
+            }
+        }
+        let counter = setInterval(count,1000)
+    </script>
+</body>
+</html>
