@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        let numsOne = [1, 2, 3];
+let numsTwo = [4, 5, 6];
+
+let allArr = [...numsOne,...numsTwo]
+console.log(allArr)
+
+numsOne.push(...numsTwo)
+console.log(numsOne)
+
+let myArr = new Set([...numsOne,...numsTwo])
+
+console.log([...myArr])
+// Needed Output
+[1, 2, 3, 4, 5, 6]
+    </script>
+</body>
+</html>

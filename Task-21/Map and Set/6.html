@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        let chars = ["A", "B", "C", "D", "E", 10, 15, 6];
+
+        console.log(chars.copyWithin(3))
+
+        let chars2 = ["A", "B", "C", 20, "D", "E", 10, 15, 6];
+        console.log(chars2.copyWithin(3,4,5))
+        console.log(chars2.copyWithin(4))
+       
+        let chars3 = ["Z", "Y", "A", "D", "E", 10, 1];
+        console.log(chars3.copyWithin(2))
+
+// Needed Output
+["Z", "Y", "Z", "Y", "A", "D", "E"]
+    </script>
+</body>
+</html>

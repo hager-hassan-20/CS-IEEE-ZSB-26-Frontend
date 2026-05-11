@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        let chosen = 1;
+
+let myFriends = [
+  { title: "Osama", age: 39, available: true, skills: ["HTML", "CSS"] },
+  { title: "Ahmed", age: 25, available: false, skills: ["Python", "Django"] },
+  { title: "Sayed", age: 33, available: true, skills: ["PHP", "Laravel"] },
+];
+
+if(chosen===1){
+    let [a,,] =myFriends
+    console.log(a) 
+}
+
+if(chosen===2){
+    let [,b,] =myFriends
+    console.log(b) 
+}
+
+if(chosen===3){
+    let [,,c] =myFriends
+    console.log(c) 
+}
+
+    </script>
+</body>
+</html>
