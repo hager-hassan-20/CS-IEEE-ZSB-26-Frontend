@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        class Car{
+            constructor(name,model,price){
+                this.n = name
+                this.m = model
+                this.p = price
+            }
+            run(){
+                return `Car Is Running Now`
+            }
+            stop(){
+                return `Car Is Stopped`
+            }
+            output(){
+                return `Car One Name Is ${this.n} And Model Is ${this.m} And Price Is ${this.p}`
+            }
+        }
+
+        let carOne = new Car("MG",2022,420000)
+        let carTwo = new Car("Kia Sportage",2025,2700000)
+        let carThree = new Car("BYD F3",2026,550000)
+
+        console.log(carOne.output())
+        console.log(carOne.run())
+
+    </script>
+</body>
+</html>

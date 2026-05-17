@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        let re = /https?:\/\/(?:[-\w]+\.)?([-\w]+)\.\w+(?:\.\w+)?\/?.*/i;
+/* 
+https?
+يعني ال https or http هيطبعلي الاتنين عادي
+*/
+
+/* 
+\/\/
+ دول الموجودين بعد ال http 
+ زي https://
+*/
+
+
+/*
+? Zero or one
+*/
+
+/*
+[-\w]+ 
+بتاخد اسم ال range الموقع زي google 
+*/
+
+/*
+\.\w+  
+range الموقع بتاعي زي 
+.com or .net
+*/
+
+/*
+(?:\.\w+)
+بردوا بتاخد range الموقع بس بيكون مدي اضافي زي
+.com.egeg
+*/
+
+/*
+.* 
+كل ال char اللي بعد ال link بتاعي زي /page?id=1
+*/
+/*
+i
+Flag Case Insensitive
+*/
+    </script>
+</body>
+</html>
