@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        let dateNow = new Date();
+        let birthday = new Date("Feb 10, 2006");
+        let dateDiff = dateNow - birthday;
+
+        let seconds = dateDiff / 1000;
+        let minutes = seconds / 60;
+        let hours = minutes / 60;
+        let days = hours / 24;
+        let months = days / 30;    
+        let years = days / 365;
+
+        console.log(Math.floor(seconds));
+        console.log(Math.floor(minutes));
+        console.log(Math.floor(hours));
+        console.log(Math.floor(days));
+        console.log(Math.floor(months));
+        console.log(Math.floor(years));
+
+    </script>
+</body>
+</html>

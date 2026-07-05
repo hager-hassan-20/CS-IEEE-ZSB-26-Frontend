@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        let start = performance.now()
+
+        for (let i = 0; i <= 99999 ; i++) {
+            console.log(i)
+            
+        }
+
+        let end = performance.now()
+        let duration = end - start
+        console.log(`Loop Took ${Math.floor(duration)} Milliseconds.`)
+    </script>
+</body>
+</html>

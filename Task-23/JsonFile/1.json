@@ -1,0 +1,38 @@
+
+[
+  {
+    "id": 1,
+    "author": "Ahmed Ali",
+    "category": "Programming",
+    "title": "Introduction to JavaScript",
+    "content": "JavaScript is one of the most popular programming languages."
+  },
+  {
+    "id": 2,
+    "author": "Sara Mohamed",
+    "category": "Web Design",
+    "title": "Learning CSS",
+    "content": "CSS is used to style web pages and create attractive layouts."
+  },
+  {
+    "id": 3,
+    "author": "Omar Hassan",
+    "category": "Technology",
+    "title": "Artificial Intelligence",
+    "content": "AI is changing the future of many industries."
+  },
+  {
+    "id": 4,
+    "author": "Mona Ibrahim",
+    "category": "Database",
+    "title": "SQL Basics",
+    "content": "SQL is the standard language for managing databases."
+  },
+  {
+    "id": 5,
+    "author": "Youssef Adel",
+    "category": "Frontend",
+    "title": "HTML Essentials",
+    "content": "HTML is the foundation of every web page."
+  }
+]
